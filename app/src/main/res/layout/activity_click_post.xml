@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register"
+    tools:context=".ClickPostActivity">
+
+    <include
+        android:id="@+id/update_post_page_toolbar"
+        layout="@layout/app_bar_layout"/>
+
+    <ImageView
+        android:id="@+id/edit_post_image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/update_post_page_toolbar"
+        android:layout_marginTop="55dp"
+        app:srcCompat="@drawable/select_image"
+        android:layout_alignParentStart="true"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/write_something"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_post_image"
+        android:layout_marginTop="20dp"
+        android:text="Write Something about this post"
+        android:textColor="@android:color/black"
+        android:background="@drawable/inputs"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:id="@+id/edit_post_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/write_something"
+        android:layout_margin="20dp"
+        android:text="Edit Post"
+        android:textColor="@android:color/black"
+        android:background="@drawable/inputs"/>
+    <Button
+        android:id="@+id/delete_post_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_post_button"
+        android:layout_margin="20dp"
+        android:text="Delete Post"
+        android:textColor="@android:color/black"
+        android:background="@drawable/inputs"/>
+
+</RelativeLayout>
