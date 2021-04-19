@@ -250,7 +250,7 @@ public class ChatActivity extends AppCompatActivity {
         map.put("time",savecurrentTime);
         map.put("type",state);
 
-        UsersRef.child(message_receiver_name)
+        UsersRef.child(receiver_user_id)
                 .child("userstate")
                 .updateChildren(map);
 
